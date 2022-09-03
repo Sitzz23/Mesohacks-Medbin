@@ -31,7 +31,8 @@ const Style = styled.a`
     display: inline-flex;
     padding: 0.5em 1.5em;
     font-size: 1.25em;
-    margin-top: 40px;
+    margin-top: 16px;
+    width: 230px;
     font-weight: 500;
     color: #fab4d2;
     background: ${({ theme }) => theme.button.default.background};

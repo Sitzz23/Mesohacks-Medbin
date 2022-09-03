@@ -1,15 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
     return (
-        <div className='amed text-lg fixed flex gap-2 -right-[3.8rem] top-[8rem] -rotate-90'>
-            <div className=''>Team</div>
+        <div className='amed text-lg fixed flex gap-3 -right-[4.2rem] top-[8rem] -rotate-90'>
+            <Link to='/team'>
+                <div>Team</div>
+            </Link>
+
             <div className=''>•</div>
-            <div className=''>The ML</div>
-            <div className=''>•</div>
-            <div className=''>Game</div>
+            <Link to='/ml'>
+                <div>The ML</div>
+            </Link>
+
+            <div>•</div>
+            <Link to='/game'>
+                <div>Game</div>
+            </Link>
         </div>
     );
 };
 
 export default Nav;
+
+//

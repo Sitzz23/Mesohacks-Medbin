@@ -16,6 +16,15 @@
     src: url("../assets/amed.woff2") format("woff2");
 }
 
+@font-face {
+    font-family: "med";
+    src: url("../assets/med.woff2") format("woff2");
+}
+
+.med {
+    font-family: "med";
+}
+
 .abold {
     font-family: "avertabold";
 }
