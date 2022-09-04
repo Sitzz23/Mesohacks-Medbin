@@ -14,9 +14,7 @@ export default function App() {
         <ThemeProvider theme={lightTheme}>
             {/* <GlobalStyles /> */}
 
-            <Button ref={hoverRef}>
-                Upload Docs
-            </Button>
+            <Button ref={hoverRef}>ML Model</Button>
 
             <Cursor hover={isHovered} />
         </ThemeProvider>

@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import cuid from "cuid";
-import { Logo, Nav, Drop, ImageGrid } from "../components";
+import { Logo, Nav, Drop, ImageGrid, Dialog, Blink } from "../components";
 
 const Ml = () => {
     const [images, setImages] = useState([]);
@@ -22,20 +22,23 @@ const Ml = () => {
         <>
             <Logo />
             <Nav />
-            <div className='p-8 max-h-screen'>
-                <span className='text-5xl amed '>Lorem, ipsum.</span>
+            <div className='p-8 max-h-screen relative'>
+                <span className='text-5xl amed '>Upload Image</span>
                 <p className=' w-3/5 areg text-lg  my-5 leading-relaxed tracking wider'>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Reiciendis consequuntur eius perspiciatis voluptatem
-                    molestiae numquam dolorum nobis, debitis soluta quae optio
-                    doloremque exercitationem, explicabo sequi quasi doloribus
-                    id ipsa saepe architecto quo quia quod eligendi ad
-                    blanditiis. Culpa neque, est illo laborum repudiandae, natus
-                    molestiae veritatis saepe itaque, consequuntur omnis?
+                    Upload an image to let our ML algorithm do the work.
                 </p>
+                <div className='absolute right-[10rem] top-[2rem]'>
+                    {" "}
+                    <a
+                        href='https://github.com/Gautam-J/waste-classification'
+                        target='_blank'
+                    >
+                        <Blink />
+                    </a>
+                </div>
             </div>
             <div className='px-8 text-center fit'>
-                <div className='px-8 flex justify-center'>
+                <div className='px-8 mb-8 flex justify-center'>
                     <Drop
                         className='w-fit'
                         onDrop={onDrop}
@@ -43,6 +46,8 @@ const Ml = () => {
                     />
                     <ImageGrid images={images} />
                 </div>
+
+                <Dialog />
             </div>
         </>
     );
