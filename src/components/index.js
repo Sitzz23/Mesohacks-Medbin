@@ -5,3 +5,4 @@ export { default as Upload } from "./Upload";
 export { default as Drop } from "./Drop";
 export { default as ImageGrid } from "./imageGrid";
 export { default as Cursor } from "./Cursor";
+export { default as Play } from "./Play";

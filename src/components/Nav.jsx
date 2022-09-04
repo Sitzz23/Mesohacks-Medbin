@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
     return (
-        <div className='amed text-lg fixed flex gap-3 -right-[6.5rem] top-[10rem] -rotate-90'>
+        <div className='amed text-lg fixed flex gap-3 -right-[6.5rem] top-[10rem] -rotate-90 z-50'>
             <Link to='/team'>
                 <div>Team</div>
             </Link>

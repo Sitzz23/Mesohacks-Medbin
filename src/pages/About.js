@@ -1,8 +1,10 @@
 import React from "react";
 import lottie from "lottie-web";
 import Blob from "../assets/pinkblob.json";
+import Dustbin from "../assets/dustbin.json";
 import VBlob from "../assets/vblob.json";
 import BBlob from "../assets/bblob.json";
+import Svg from "../assets/man.png";
 import { Logo, Nav, Button } from "../components";
 
 const About = () => {
@@ -13,6 +15,15 @@ const About = () => {
             loop: true,
             autoplay: true,
             animationData: Blob, // the path to the animation json
+        });
+    }, []);
+    React.useEffect(() => {
+        lottie.loadAnimation({
+            container: document.querySelector("#dust"), // the dom element that will contain the animation
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            animationData: Dustbin, // the path to the animation json
         });
     }, []);
     React.useEffect(() => {
@@ -38,7 +49,7 @@ const About = () => {
         <div className='relative'>
             <Logo />
             <Nav />
-            <div class='parent w-full'>
+            <div class='parent w-full relative overflow-hidden'>
                 <div class='div1 place-self-center'>
                     <div className='flex flex-col amed'>
                         <h1 className='text-5xl med'>Lorem</h1>
@@ -52,9 +63,19 @@ const About = () => {
                         <Button />
                     </div>
                 </div>
-                <div class='div2 overflow-hidden m-auto'>
-                    <div id='blob' style={{ width: 700, height: 700 }}></div>
+                <div class='div2 overflow-hidden m-auto '>
+                    <div
+                        id='blob'
+                        className='-mt-5'
+                        style={{ width: 800, height: 800 }}
+                    ></div>
                 </div>
+                <img
+                    src={Svg}
+                    alt='man pixking garbage'
+                    width='1500px'
+                    className='absolute -top-[80px] left-[200px]'
+                />
             </div>
             <div className='w-full mt-40 relative h-[90vh] overflow-hidden'>
                 <h1 className='text-7xl amed text-center'>About the Project</h1>
