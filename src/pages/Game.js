@@ -1,11 +1,12 @@
 import React from 'react'
-import { Logo, Nav } from "../components";
+import { Logo, Nav, Cursor } from "../components";
 
 const Game = () => {
     return (
         <>
             <Logo />
             <Nav />
+            <Cursor />
         </>
     );
 };

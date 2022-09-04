@@ -74,4 +74,12 @@ body {
     transition: all 0.2s;
 }
 
+.nue {
+    -webkit-border-radius: 30px;
+    border-radius: 50px;
+    background: #fff9ec;
+    -webkit-box-shadow: 15px 15px 80px #e6e0d4, -15px -15px 80px #ffffff;
+    box-shadow: 15px 15px 80px #e6e0d4, -15px -15px 80px #ffffff;
+}
+
 @tailwind utilities;
