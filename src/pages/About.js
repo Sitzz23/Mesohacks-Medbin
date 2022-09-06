@@ -51,7 +51,7 @@ const About = () => {
             <Nav />
             <div class='parent w-full relative overflow-hidden'>
                 <div class='div1 place-self-center'>
-                    <div className='flex flex-col amed'>
+                    <div className='flex flex-col amed ml-16 -mt-20'>
                         <h1 className='text-5xl med'>Med</h1>
                         <p className='text-5xl med'>Bin</p>
                         <p className='text-xl  pt-4 leading-relaxed tracking wide'>
